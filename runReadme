@@ -1,0 +1,2 @@
+# export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/romateng/Documents/LearnVIORB-masterOrigin/Examples/ROS
+# roslaunch Examples/ROS/ORB_VIO/launch/testeuroc.launch
