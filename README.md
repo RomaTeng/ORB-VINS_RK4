@@ -1,6 +1,11 @@
+Thanks to Jingpang (https://github.com/jingpang) such that we can easily modify the code. 
+This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) with [Runge Kutta 4-th order integration on manifold].
 
-An implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
+Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.  
+Then we will upload our defined IMU edges without the assumption that IMU_PVR edge and IMU_bias edge are independent.
 
+******
+Below is the primary README of Jingpang's code [LearVIORB].
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
 
 Build with `build.sh`. Modify the path in `config/euroc.yaml`. 
@@ -8,8 +13,6 @@ Build with `build.sh`. Modify the path in `config/euroc.yaml`.
 Tested on [EuRoc](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) ROS bag data with ROS launch file `Examples/ROS/ORB_VIO/launch/testeuroc.launch`. Files in `pyplotscripts` can be used to visualize some results.
 
 Tested on sensors: [UI-1221-LE](https://en.ids-imaging.com/store/ui-1221le.html) and [3DM-GX3-25](http://www.microstrain.com/inertial/3dm-gx3-25), see video on [Youtube (real-time)](https://youtu.be/AUWBpSj-XtA) or [YouKu](http://v.youku.com/v_show/id_XMTkxMjgzMzMwOA).
-
-Please contact `jp08-at-foxmail-dot-com` for more details.
 
 Below is the primary README of ORBSLAM2.
 
