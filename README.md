@@ -2,16 +2,22 @@ Thanks to Jingpang (https://github.com/jingpang) such that we can easily modify 
 This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) with [Runge Kutta 4-th order integration on manifold].
 
 Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.
-A more accurate integration code also being RK4 will be uploaded.  
-Then we will upload our defined IMU edges without the assumption that IMU_PVR edge and IMU_bias edge are independent.
-Now this new IMU factor to be uploaded shows some improvement on our tests. Hoplefully, it will be a best IMU factor in the East Sphere and South Sphere. Haha.
+Now a more accurate integration code also being RK4 has been be uploaded.  
+
+We have done a new IMU vertex and a IMU edge without the assumption that IMU_PVR edge and IMU_bias edge are independent.
+This method is called "continuous Pre-integration on real manifold" against some related work such as balabala.
+Now this new IMU factor shows some improvement on our tests. We may upload this later once we ensure that it is be the best IMU factor in the East Sphere.
+
 
 
 ******
-Below is the primary README of Jingpang's code [LearnVIORB].
+Below is the primary README of Jingpang's code [LearnVIORB] added with some tips.
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
 
-Build with `build.sh`. Modify the path in `config/euroc.yaml`. 
+[Please run $export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/.../ORB-VINS_RK4/Examples/ROS]. Go to the [/.../ORB-VINS_RK4] and
+build with `build.sh`. Modify the data path in `config/euroc.yaml`. 
+Then you can run "roslaunch Examples/ROS/ORB_VIO/launch/testeuroc.launch" to experience this code.
+
 
 Tested on [EuRoc](http://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets) ROS bag data with ROS launch file `Examples/ROS/ORB_VIO/launch/testeuroc.launch`. Files in `pyplotscripts` can be used to visualize some results.
 
