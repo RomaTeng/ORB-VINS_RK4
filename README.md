@@ -4,9 +4,10 @@ This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/161
 Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.
 Now a more accurate integration code also being RK4 has been be uploaded.  
 
-We have done a new IMU vertex and a IMU edge without the assumption that IMU_PVR edge and IMU_bias edge are independent.
-This method is called "continuous Pre-integration on real manifold" against some related work such as balabala.
-Now this new IMU factor shows some improvement on our tests. We may upload this later once we ensure that it is be the best IMU factor in the East Sphere.
+[Future Work]
+We have done a new IMU vertex and a new IMU edge without the assumption that IMU_PVR edge and IMU_bias edge are independent.
+This method is called "continuous Pre-integration on real manifold" against some previous work, such as balabala.
+Now this new IMU factor shows some improvement on our tests. We may upload this later once we ensure that it is be the best IMU factor in the [East Sphere].
 
 
 
