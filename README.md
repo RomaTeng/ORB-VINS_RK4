@@ -4,6 +4,8 @@ This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/161
 Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.
 A more accurate integration code also being RK4 will be uploaded.  
 Then we will upload our defined IMU edges without the assumption that IMU_PVR edge and IMU_bias edge are independent.
+Now this new IMU factor to be uploaded shows some improvement on our tests. Hoplefully, it will be a best IMU factor in the East Sphere and South Sphere. Haha.
+
 
 ******
 Below is the primary README of Jingpang's code [LearVIORB].
