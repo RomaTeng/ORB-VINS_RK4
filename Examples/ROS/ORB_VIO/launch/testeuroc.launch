@@ -1,6 +1,6 @@
 <launch>
 
- 	<node pkg="ORB_VIO" type="VIO" name="VIO"  args="/home/romateng/Documents/LearnVIORB-masterOrigin/Vocabulary/ORBvoc.bin /home/romateng/Documents/LearnVIORB-masterOrigin/config/euroc.yaml" cwd="node" output="screen">
+ 	<node pkg="ORB_VIO" type="VIO" name="VIO"  args="$(find ORB_VIO)/../../../Vocabulary/ORBvoc.bin $(find ORB_VIO)/../../../config/euroc.yaml" cwd="node" output="screen">
 	</node>
 
 </launch>
