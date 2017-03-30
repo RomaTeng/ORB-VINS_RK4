@@ -1,21 +1,21 @@
-Thanks to Jingpang (https://github.com/jingpang) such that we can easily modify the code. 
-This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) with [Runge Kutta 4-th order integration on manifold].
+Thanks to **Jingpang** (https://github.com/jingpang) such that we can easily modify the code. 
+This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on ORB-SLAM2(https://github.com/raulmur/ORB_SLAM2) with Runge Kutta 4-th order integration on manifold.
 
 Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.
 Now a more accurate integration code also being RK4 has been be uploaded.  
 
 [Future Work]
 We have done a new IMU vertex and a new IMU edge without the assumption that IMU_PVR edge and IMU_bias edge are independent.
-This method is called "continuous Pre-integration on real manifold" against some previous work, such as balabala.
-Now this new IMU factor shows some improvement on our tests. We may upload this later once we ensure that it is be the best IMU factor in the [East Sphere].
+This method is called "**continuous Pre-integration on real manifold**" against some previous work, such as balabala.
+Now this new IMU factor shows some improvement on our tests. We may upload this later once we ensure that it is be the best IMU factor in the # East Sphere.
 
 
 
 ******
-Below is the primary README of Jingpang's code [LearnVIORB] added with some tips.
+Below is the primary README of Jingpang's code **LearnVIORB** added with some tips.
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
 
-[Please run $export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/.../ORB-VINS_RK4/Examples/ROS]. Go to the [/.../ORB-VINS_RK4] and
+Please run "#export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/.../ORB-VINS_RK4/Examples/ROS". Go to the "/.../ORB-VINS_RK4" and
 build with `build.sh`. Modify the data path in `config/euroc.yaml`. 
 Then you can run "roslaunch Examples/ROS/ORB_VIO/launch/testeuroc.launch" to experience this code.
 
