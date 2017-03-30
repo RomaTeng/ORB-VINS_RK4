@@ -8,7 +8,7 @@ Now this new IMU factor to be uploaded shows some improvement on our tests. Hopl
 
 
 ******
-Below is the primary README of Jingpang's code [LearVIORB].
+Below is the primary README of Jingpang's code [LearnVIORB].
 Not bug-free. Not real-time. Just try the basic ideas of Visual Inertial SLAM in above paper. Welcome to improve it together!
 
 Build with `build.sh`. Modify the path in `config/euroc.yaml`. 
