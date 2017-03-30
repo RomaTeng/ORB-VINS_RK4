@@ -1,1 +1,0 @@
-/home/romateng/Documents/LearnVIORB-masterOrigin/Examples/ROS/ORB_VIO
