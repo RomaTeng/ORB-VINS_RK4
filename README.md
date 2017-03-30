@@ -1,7 +1,8 @@
 Thanks to Jingpang (https://github.com/jingpang) such that we can easily modify the code. 
 This is an implementation of [Visual Inertial ORBSLAM](https://arxiv.org/abs/1610.05949) based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) with [Runge Kutta 4-th order integration on manifold].
 
-Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.  
+Later, a document about how to perform integration by using Runge Kutta 4-order on manifold will be uploaded.
+A more accurate integration code also being RK4 will be uploaded.  
 Then we will upload our defined IMU edges without the assumption that IMU_PVR edge and IMU_bias edge are independent.
 
 ******
